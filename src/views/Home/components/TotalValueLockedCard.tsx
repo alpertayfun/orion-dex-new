@@ -41,7 +41,16 @@ const TotalValueLockedCard = () => {
             </Row>
           </>
         ) : (
-          <Skeleton height={66} />
+          <>
+            <Row>
+              <Text>{t('Total Liquidity')}:</Text>
+              <Text bold>${totalLiquidity}</Text>
+            </Row>
+            <Row>
+              <Text>{t('24H Volume')}:</Text>
+              <Text bold>${dailyVolume}</Text>
+            </Row>
+          </>
         )}
       </CardBody>
     </StyledTotalValueLockedCard>
